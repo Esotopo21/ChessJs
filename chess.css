@@ -1,0 +1,27 @@
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 80px);
+}
+
+.chessboard .square {
+    height: 80px;
+    width: 80px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid black;
+}
+
+.chessboard .square.black {
+    background-color: darkgreen;
+}
+
+.chessboard .square.white {
+    background-color: white;
+}
+
+.chessboard .availiable {
+    background-color: yellow !important;
+}
