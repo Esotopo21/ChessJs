@@ -39,7 +39,7 @@ function updateChessboard() {
             const ceil = document.getElementById(id);
             const piece = getPiece(chessboard[i][j]);
             if (piece.id) {
-                ceil.style.backgroundImage = `url(sprite/${piece.value > 0 ? 'white' : 'black'}_${piece.name}.png)`;
+                ceil.style.backgroundImage = `url(${piece.value > 0 ? 'white' : 'black'}_${piece.name}.png)`;
             } else {
                 ceil.style.backgroundImage = 'none';
             }
